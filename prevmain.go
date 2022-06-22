@@ -19,27 +19,27 @@ func Prevmn() {
 		panic(err1)
 	}
 
-	// Create a new FF1 cipher "object"
-	// 10 is the radix/base, and 8 is the tweak length.
-	FF1, err1 := ff1.NewCipher(10, 8, key, tweak)
-	if err1 != nil {
-		panic(err1)
-	}
+// 	// Create a new FF1 cipher "object"
+// 	// 10 is the radix/base, and 8 is the tweak length.
+// 	FF1, err1 := ff1.NewCipher(10, 8, key, tweak)
+// 	if err1 != nil {
+// 		panic(err1)
+// 	}
 
-	original := "123456789"
+// 	original := "123456789"
 
-	// Call the encryption function on an example SSN
-	ciphertext, err1 := FF1.Encrypt(original)
-	if err1 != nil {
-		panic(err1)
-	}
+// 	// Call the encryption function on an example SSN
+// 	ciphertext, err1 := FF1.Encrypt(original)
+// 	if err1 != nil {
+// 		panic(err1)
+// 	}
 
-	plaintext, err1 := FF1.Decrypt(ciphertext)
-	if err1 != nil {
-		panic(err1)
-	}
+// 	plaintext, err1 := FF1.Decrypt(ciphertext)
+// 	if err1 != nil {
+// 		panic(err1)
+// 	}
 
-	fmt.Println("Original:", original)
-	fmt.Println("Ciphertext:", ciphertext)
-	fmt.Println("Plaintext:", plaintext)
+// 	fmt.Println("Original:", original)
+// 	fmt.Println("Ciphertext:", ciphertext)
+// 	fmt.Println("Plaintext:", plaintext)
 }
