@@ -7,7 +7,7 @@ import (
 )
 
 // panic(err) is just used for example purposes.
-func Prevmn()(err){
+func Prevmain() {
 	// Key and tweak should be byte arrays. Put your key and tweak here.
 	// To make it easier for demo purposes, decode from a hex string here.
 	key, err := hex.DecodeString("EF4359D8D580AA4F7F036D6F04FC6A94")
@@ -42,5 +42,4 @@ func Prevmn()(err){
 	fmt.Println("Original:", original)
 	fmt.Println("Ciphertext:", ciphertext)
 	fmt.Println("Plaintext:", plaintext)
-	return err
 }
