@@ -10,13 +10,13 @@ import (
 func Prevmn() {
 	// Key and tweak should be byte arrays. Put your key and tweak here.
 	// To make it easier for demo purposes, decode from a hex string here.
-	key, err := hex.DecodeString("EF4359D8D580AA4F7F036D6F04FC6A94")
-	if err != nil {
-		panic(err)
+	key, error := hex.DecodeString("EF4359D8D580AA4F7F036D6F04FC6A94")
+	if error != nil {
+		panic(error)
 	}
-	tweak, err := hex.DecodeString("D8E7920AFA330A73")
-	if err != nil {
-		panic(err)
+	tweak, error := hex.DecodeString("D8E7920AFA330A73")
+	if error != nil {
+		panic(error)
 	}
 
 	// Create a new FF1 cipher "object"
