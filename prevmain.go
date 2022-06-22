@@ -7,7 +7,7 @@ import (
 )
 
 // panic(err) is just used for example purposes.
-func main() {
+func prevmain() {
 	// Key and tweak should be byte arrays. Put your key and tweak here.
 	// To make it easier for demo purposes, decode from a hex string here.
 	key, err := hex.DecodeString("EF4359D8D580AA4F7F036D6F04FC6A94")
