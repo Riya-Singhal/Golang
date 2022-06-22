@@ -42,5 +42,5 @@ func Prevmain(){
 	fmt.Println("Original:", original)
 	fmt.Println("Ciphertext:", ciphertext)
 	fmt.Println("Plaintext:", plaintext)
-	return 0
+	
 }
