@@ -1,4 +1,4 @@
-package Prevmain
+package prevmaine
 
 import (
 	"encoding/hex"
